@@ -13,6 +13,7 @@ namespace RecipesApp.Entities.DTOs
         public DateTime CreationDate { get; set; }
         public int IdUser { get; set; }
         public User User { get; set; }
+        public int Rating { get; set; }
         public List<PullRecipe> PullRecipes { get; set; }
         public List<Review> Reviews { get; set; }
         public List<Comment> Comments { get; set; }

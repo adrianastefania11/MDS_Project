@@ -12,6 +12,7 @@ namespace RecipesApp.Entities
         public string Name { get; set; }
         public string DerivedRecipeFile { get; set; }
         public int IdRecipe { get; set; }
+        public int Rating { get; set; }
         public virtual Recipe Recipe { get; set; }
         public virtual ICollection<DerivedTag> DerivedTags { get; set; }
     }

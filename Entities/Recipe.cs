@@ -13,6 +13,7 @@ namespace RecipesApp.Entities
         public DateTime CreationDate { get; set; }
         public int IdUser { get; set; }
         public virtual User User { get; set; }
+        public int Rating { get; set; }
         public ICollection<PullRecipe> PullRecipes { get; set; }
         public ICollection<Review> Reviews { get; set; }
         public ICollection<Comment> Comments { get; set; }
