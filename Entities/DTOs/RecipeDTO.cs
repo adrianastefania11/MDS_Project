@@ -31,6 +31,8 @@ namespace RecipesApp.Entities.DTOs
             this.RecipeFinal = recipe.RecipeFinal;
             this.CreationDate = recipe.CreationDate;
             this.IdUser = recipe.IdUser;
+            this.Rating = recipe.Rating;
+
             this.User = recipe.User;
             this.PullRecipes = new List<PullRecipe>();
             this.Reviews = new List<Review>();
