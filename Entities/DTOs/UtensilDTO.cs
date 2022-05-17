@@ -16,7 +16,7 @@ namespace RecipesApp.Entities.DTOs
         {
             this.Name = utensil.Name;
             this.Description = utensil.Description;
-            this.CookedWiths = new List<CookedWith>();
+            this.CookedWiths = utensil.CookedWiths.ToList();
         }
     }
 }

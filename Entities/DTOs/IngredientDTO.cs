@@ -17,7 +17,7 @@ namespace RecipesApp.Entities.DTOs
     
             this.Name = ingredient.Name;
             this.Price = ingredient.Price;
-            this.MadeWiths = new List<MadeWith>();
+            this.MadeWiths = ingredient.MadeWiths.ToList();
         }
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adriana\\Desktop\\mds2\\RecipesApp.csproj": {}
+    "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\RecipesApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adriana\\Desktop\\mds2\\RecipesApp.csproj": {
+    "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\RecipesApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adriana\\Desktop\\mds2\\RecipesApp.csproj",
+        "projectUniqueName": "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\RecipesApp.csproj",
         "projectName": "RecipesApp",
-        "projectPath": "C:\\Users\\Adriana\\Desktop\\mds2\\RecipesApp.csproj",
+        "projectPath": "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\RecipesApp.csproj",
         "packagesPath": "C:\\Users\\Adriana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adriana\\Desktop\\mds2\\obj\\",
+        "outputPath": "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adriana\\AppData\\Roaming\\NuGet\\NuGet.Config",

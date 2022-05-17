@@ -57,7 +57,7 @@ namespace RecipesApp
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "RecipesApp", Version = "v1" });
             });
 
-            services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Data Source=DESKTOP-LCU5F5H;Initial Catalog=RecipesApp;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
+            services.AddDbContext<AppDbContext>(options => options.UseSqlServer("Data Source=localhost;Initial Catalog=Recipe;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"));
 
             services.AddIdentity<User, Role>()
                   .AddEntityFrameworkStores<AppDbContext>()

@@ -34,15 +34,15 @@ namespace RecipesApp.Entities.DTOs
             this.Rating = recipe.Rating;
 
             this.User = recipe.User;
-            this.PullRecipes = new List<PullRecipe>();
-            this.Reviews = new List<Review>();
-            this.Comments = new List<Comment>();
-            this.Questions = new List<Question>();
-            this.DerivedRecipes = new List<DerivedRecipe>();
-            this.MadeWiths = new List<MadeWith>();
-            this.CookedWiths = new List<CookedWith>();
-            this.RecipeTags = new List<RecipeTag>();
-            this.RecipeLibraries = new List<RecipeLibrary>();
+            this.PullRecipes = recipe.PullRecipes.ToList();
+            this.Reviews = recipe.Reviews.ToList();
+            this.Comments = recipe.Comments.ToList();
+            this.Questions = recipe.Questions.ToList();
+            this.DerivedRecipes = recipe.DerivedRecipes.ToList();
+            this.MadeWiths = recipe.MadeWiths.ToList();
+            this.CookedWiths = recipe.CookedWiths.ToList();
+            this.RecipeTags = recipe.RecipeTags.ToList();
+            this.RecipeLibraries = recipe.RecipeLibraries.ToList();
         }
 
         public static implicit operator RecipeDTO(ReviewDTO v)

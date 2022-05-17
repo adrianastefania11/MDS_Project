@@ -9,5 +9,6 @@ namespace RecipesApp.Entities.CreateDTO
     {
         public string Name { get; set; }
         public float Price { get; set; }
+        public List<MadeWith> MadeWiths { get; set; }
     }
 }

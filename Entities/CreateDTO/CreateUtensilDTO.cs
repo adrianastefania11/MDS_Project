@@ -7,7 +7,10 @@ namespace RecipesApp.Entities.CreateDTO
 {
     public class CreateUtensilDTO
     {
+       
         public string Name { get; set; }
-   
+        public string Description { get; set; }
+        public List<CookedWith> CookedWiths { get; set; }
+
     }
 }

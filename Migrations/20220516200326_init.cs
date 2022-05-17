@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace RecipesApp.Migrations
 {
-    public partial class vladyc1 : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -55,41 +55,35 @@ namespace RecipesApp.Migrations
                 name: "Ingredients",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Price = table.Column<float>(type: "real", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Ingredients", x => x.Id);
+                    table.PrimaryKey("PK_Ingredients", x => x.Name);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Tags",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tags", x => x.Id);
+                    table.PrimaryKey("PK_Tags", x => x.Name);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Utensils",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Utensils", x => x.Id);
+                    table.PrimaryKey("PK_Utensils", x => x.Name);
                 });
 
             migrationBuilder.CreateTable(
@@ -243,7 +237,8 @@ namespace RecipesApp.Migrations
                     RecipeFinal = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     IdUser = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: true)
+                    UserId = table.Column<int>(type: "int", nullable: true),
+                    Rating = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -301,12 +296,12 @@ namespace RecipesApp.Migrations
                 name: "CookedWiths",
                 columns: table => new
                 {
-                    IdUtensil = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdRecipe = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_CookedWiths", x => new { x.IdUtensil, x.IdRecipe });
+                    table.PrimaryKey("PK_CookedWiths", x => new { x.Name, x.IdRecipe });
                     table.ForeignKey(
                         name: "FK_CookedWiths_Recipes_IdRecipe",
                         column: x => x.IdRecipe,
@@ -314,10 +309,10 @@ namespace RecipesApp.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_CookedWiths_Utensils_IdUtensil",
-                        column: x => x.IdUtensil,
+                        name: "FK_CookedWiths_Utensils_Name",
+                        column: x => x.Name,
                         principalTable: "Utensils",
-                        principalColumn: "Id",
+                        principalColumn: "Name",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -331,6 +326,7 @@ namespace RecipesApp.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DerivedRecipeFile = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdRecipe = table.Column<int>(type: "int", nullable: false),
+                    Rating = table.Column<int>(type: "int", nullable: false),
                     RecipeId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -348,17 +344,17 @@ namespace RecipesApp.Migrations
                 name: "MadeWiths",
                 columns: table => new
                 {
-                    IdIngredient = table.Column<int>(type: "int", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdRecipe = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MadeWiths", x => new { x.IdIngredient, x.IdRecipe });
+                    table.PrimaryKey("PK_MadeWiths", x => new { x.Name, x.IdRecipe });
                     table.ForeignKey(
-                        name: "FK_MadeWiths_Ingredients_IdIngredient",
-                        column: x => x.IdIngredient,
+                        name: "FK_MadeWiths_Ingredients_Name",
+                        column: x => x.Name,
                         principalTable: "Ingredients",
-                        principalColumn: "Id",
+                        principalColumn: "Name",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_MadeWiths_Recipes_IdRecipe",
@@ -439,12 +435,12 @@ namespace RecipesApp.Migrations
                 name: "RecipeTags",
                 columns: table => new
                 {
-                    IdTag = table.Column<int>(type: "int", nullable: false),
+                    NameTag = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdRecipe = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RecipeTags", x => new { x.IdTag, x.IdRecipe });
+                    table.PrimaryKey("PK_RecipeTags", x => new { x.NameTag, x.IdRecipe });
                     table.ForeignKey(
                         name: "FK_RecipeTags_Recipes_IdRecipe",
                         column: x => x.IdRecipe,
@@ -452,10 +448,10 @@ namespace RecipesApp.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RecipeTags_Tags_IdTag",
-                        column: x => x.IdTag,
+                        name: "FK_RecipeTags_Tags_NameTag",
+                        column: x => x.NameTag,
                         principalTable: "Tags",
-                        principalColumn: "Id",
+                        principalColumn: "Name",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -468,7 +464,8 @@ namespace RecipesApp.Migrations
                     CreationDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Text = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IdRecipe = table.Column<int>(type: "int", nullable: false),
-                    RecipeId = table.Column<int>(type: "int", nullable: true)
+                    RecipeId = table.Column<int>(type: "int", nullable: true),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -485,12 +482,12 @@ namespace RecipesApp.Migrations
                 name: "DerivedTags",
                 columns: table => new
                 {
-                    IdTag = table.Column<int>(type: "int", nullable: false),
+                    NameTag = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     IdDerivedRecipe = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DerivedTags", x => new { x.IdTag, x.IdDerivedRecipe });
+                    table.PrimaryKey("PK_DerivedTags", x => new { x.NameTag, x.IdDerivedRecipe });
                     table.ForeignKey(
                         name: "FK_DerivedTags_DerivedRecipe_IdDerivedRecipe",
                         column: x => x.IdDerivedRecipe,
@@ -498,10 +495,10 @@ namespace RecipesApp.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_DerivedTags_Tags_IdTag",
-                        column: x => x.IdTag,
+                        name: "FK_DerivedTags_Tags_NameTag",
+                        column: x => x.NameTag,
                         principalTable: "Tags",
-                        principalColumn: "Id",
+                        principalColumn: "Name",
                         onDelete: ReferentialAction.Cascade);
                 });
 

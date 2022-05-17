@@ -14,8 +14,8 @@ namespace RecipesApp.Entities.DTOs
         public TagDTO(Tag tag)
         {
             this.Name = tag.Name;
-            this.RecipeTags = new List<RecipeTag>();
-            this.DerivedTags = new List<DerivedTag>();
+            this.RecipeTags = tag.RecipeTags.ToList();
+            this.DerivedTags = tag.DerivedTags.ToList();
         }
     }
 }

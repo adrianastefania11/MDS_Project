@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/3RQIYdjMeb1eaxa8WI/3dAIXz9/oHzDxAdSSfKgRHCX2mfCfdtoBMjedwzTNQf4AQ/xXO5N56QxpyzHh3472w==",
+  "dgSpecHash": "5E088xr9YVTtccY1iXP5KX5iHf2GKh7puLiQaN4SU/H1G4b3RQpAqA7/XuAWSOAPZNJFjYN3DycCJBMSV1xVpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adriana\\Desktop\\mds2\\RecipesApp.csproj",
+  "projectFilePath": "C:\\Users\\Adriana\\Documents\\GitHub\\MDS_Project\\RecipesApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adriana\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Adriana\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",

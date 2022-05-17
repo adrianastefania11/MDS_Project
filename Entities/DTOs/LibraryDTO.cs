@@ -19,7 +19,7 @@ namespace RecipesApp.Entities.DTOs
             this.IdRecipe = library.IdRecipe;
             this.IdUser = library.IdUser;
             this.User = library.User;
-            this.RecipeLibraries = new List<RecipeLibrary>();
+            this.RecipeLibraries = library.RecipeLibraries.ToList();
         }
     }
 }
