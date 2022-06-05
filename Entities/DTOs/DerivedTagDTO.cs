@@ -12,7 +12,7 @@ namespace RecipesApp.Entities.DTOs
         public  Tag Tag { get; set; }
         public  DerivedRecipe DerivedRecipe { get; set; }
 
-        public DerivedTagDTO(DerivedTagDTO dt)
+        public DerivedTagDTO(DerivedTag dt)
         {
             this.NameTag = dt.NameTag;
             this.Tag = dt.Tag;

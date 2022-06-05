@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace RecipesApp.Entities.DTOs
 {
-    public class RecpieTagDTO
+    public class RecipeTagDTO
     {
         public string NameTag { get; set; }
         public int IdRecipe { get; set; }
         public  Recipe Recipe { get; set; }
         public  Tag Tag { get; set; }
 
-        public RecpieTagDTO(RecpieTagDTO rt)
+        public RecipeTagDTO(RecipeTag rt)
         {
             this.NameTag = rt.NameTag;
             this.Tag = rt.Tag;

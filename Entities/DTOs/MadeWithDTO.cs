@@ -12,7 +12,7 @@ namespace RecipesApp.Entities.DTOs
         public  Recipe Recipe { get; set; }
         public  Ingredient Ingredient { get; set; }
 
-        public MadeWithDTO(MadeWithDTO made)
+        public MadeWithDTO(MadeWith made)
         {
             this.Name = made.Name;
             this.Ingredient = made.Ingredient;

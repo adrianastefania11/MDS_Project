@@ -68,7 +68,7 @@ namespace RecipesApp.Controllers
         {
             Review newReview = new Review();
 
-            newReview.Name = dto.Name;
+            newReview.Text = dto.Text;
 
             _repository.Create(newReview);
 
