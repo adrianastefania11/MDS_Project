@@ -20,7 +20,7 @@ namespace RecipesApp.Controllers
         {
             _repository = repository;
         }
-
+        [HttpGet]
         public async Task<IActionResult> GetAllMadeWiths()
         {
             var MadeWiths = await _repository.GetAllMadeWith();

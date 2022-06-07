@@ -20,7 +20,7 @@ namespace DerivedsApp.Controllers
         {
             _repository = repository;
         }
-
+        [HttpGet]
         public async Task<IActionResult> GetAllDerivedTags()
         {
             var DerivedTags = await _repository.GetAllDerivedTag();

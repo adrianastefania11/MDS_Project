@@ -20,7 +20,7 @@ namespace RecipesApp.Controllers
         {
             _repository = repository;
         }
-
+        [HttpGet]
         public async Task<IActionResult> GetAllCookedWiths()
         {
             var CookedWiths = await _repository.GetAllCookedWith();

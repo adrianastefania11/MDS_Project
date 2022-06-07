@@ -20,7 +20,7 @@ namespace RecipesApp.Controllers
         {
             _repository = repository;
         }
-
+        [HttpGet]
         public async Task<IActionResult> GetAllRecipeTags()
         {
             var RecipeTags = await _repository.GetAllRecipeTag();
@@ -55,7 +55,7 @@ namespace RecipesApp.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateRecipeTag(CreateRecipeTagDTO dto)
         {
-            RecipeTag newRecipeTag = new RecipeTag();
+            RecipeTag newRecipeTag = new();
 
 
             _repository.Create(newRecipeTag);
