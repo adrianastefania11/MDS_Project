@@ -43,3 +43,4 @@ Type (Push / Pull) / Recipe name / Push / pull date / Status (accepted, not acce
 
 
 [UML.pdf](https://github.com/adrianastefania11/MDS_Project/files/8890324/UML.pdf)
+![Alt text](https://github.com/adrianastefania11/MDS_Project/files/8890324/UML.pdf)
