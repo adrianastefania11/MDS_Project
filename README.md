@@ -39,3 +39,7 @@ If the request is not accepted, then I should be notified about it.
 
 Optionally, have a history log of pull and pull requests on the user's profile which will keep track of their state. For example:
 Type (Push / Pull) / Recipe name / Push / pull date / Status (accepted, not accepted, pending), if push request / Link to the original recipe / Link to the modified recipe
+
+
+
+[UML.pdf](https://github.com/adrianastefania11/MDS_Project/files/8890324/UML.pdf)
