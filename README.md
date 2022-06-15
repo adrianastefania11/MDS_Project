@@ -2,7 +2,7 @@
  
 **Team**: Dinu Gabriel, Doncea Beatrice, Maxim Adriana, Minciuna Cezar, Neacsu Vlad
 
-**Theme**:Our project is a web application revolving around the idea of sharing and further improving recipes. The main features of the applications are: <br />
+**Theme**: Our project is a web application revolving around the idea of sharing and further improving recipes. The main features of the applications are: <br />
  -  having a user profile under which you can display your recipes
  -  being able to 'pull' an already existing recipe and modify it, creating new, derived recipes
  -  exploring other users' recipes through a search function based on different filters 
