@@ -2,15 +2,17 @@
  
 **Team**: Dinu Gabriel, Doncea Beatrice, Maxim Adriana, Minciuna Cezar, Neacsu Vlad
 
+**Theme**:Our project is a web application revolving around the idea of sharing and further improving recipes. The main features of the applications are: <br />
+ -  having a user profile under which you can display your recipes
+ -  being able to 'pull' an already existing recipe and modify it, creating new, derived recipes
+ -  exploring other users' recipes through a search function based on different filters 
 
-The **theme** chosen for our project is a web application that has that
-
-**Backlogs**: https://trello.com/c/PNpC8cuK/6-sistem-de-login <br />
+**Backlogs**: [https://trello.com/c/PNpC8cuK/6-sistem-de-login](https://trello.com/b/zk7Yqzl5/github-retete) <br />
 We used Trello in order to manage and organise our tasks during the development of the application. 
 
 **Tehnologies**: ASP.NET WEB API Entity Framework CORE , Angular
 
-**Building tool**: Visual Studio 2019, Visual Studio Core
+**Building tool**: Visual Studio 2019, Visual Studio Code
 
 
 
