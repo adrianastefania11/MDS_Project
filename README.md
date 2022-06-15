@@ -7,7 +7,7 @@
  -  being able to 'pull' an already existing recipe and modify it, creating new, derived recipes
  -  exploring other users' recipes through a search function based on different filters 
 
-**Backlogs**: [https://trello.com/c/PNpC8cuK/6-sistem-de-login](https://trello.com/b/zk7Yqzl5/github-retete) <br />
+**Backlogs**: [https://trello.com/b/zk7Yqzl5/github-retete](https://trello.com/b/zk7Yqzl5/github-retete) <br />
 We used Trello in order to manage and organise our tasks during the development of the application. 
 
 **Tehnologies**: ASP.NET WEB API Entity Framework CORE , Angular
