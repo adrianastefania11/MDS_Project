@@ -17,7 +17,7 @@ We used Trello in order to manage and organise our tasks during the development 
 
 
 
- **User Stories:**
+ **User Stories:**< br/>
 *1. Adding recipes*
 
  As a user I want to be able to create my own recipes under my profile. The creation of the recipe should be intuitive, and as such it should come in the shape of a form or walkthrough, being prompted with different decisions to make, such as:
