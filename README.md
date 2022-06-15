@@ -12,7 +12,7 @@ We used Trello in order to manage and organise our tasks during the development 
 
 **Tehnologies**: ASP.NET WEB API Entity Framework CORE , Angular
 
-**Building tool**: Visual Studio 2019, Visual Studio Code
+**Building tool**: Visual Studio 2019 (ASP.NET CORE WEB API), Visual Studio Code (Angular CLI)
 
 
 
