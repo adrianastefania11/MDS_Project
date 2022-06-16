@@ -32,7 +32,7 @@ Upon the creation of the recipe a file has to be created on the server where the
 Optionally, a user should be able to also edit the recipe.
 
 
-*2. Pulling recipes from other users*
+*2. Pulling recipes from other users*.
 
 As a user, I want to be able to view other users' (public) recipes and pull them under my own account, so that I can modify them.
 
@@ -50,7 +50,7 @@ If the request is accepted, then the author can decide if the request will becom
 If the request is not accepted, then I should be notified about it.
 
 Optionally, have a history log of pull and pull requests on the user's profile which will keep track of their state. For example:
-Type (Push / Pull) / Recipe name / Push / pull date / Status (accepted, not accepted, pending), if push request / Link to the original recipe / Link to the modified recipe.
+Type (Push / Pull) / Recipe name / Push / pull date / Status (accepted, not accepted, pending), if push request / Link to the original recipe / Link to the modified recipe
 
 
 
