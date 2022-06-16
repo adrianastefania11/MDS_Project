@@ -54,6 +54,7 @@ Type (Push / Pull) / Recipe name / Push / pull date / Status (accepted, not acce
 
 
 
+
 [Diagrama Conceptuala](https://github.com/adrianastefania11/MDS_Project/files/8890324/UML.pdf)
 
 
