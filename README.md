@@ -15,7 +15,7 @@ We used Trello in order to manage and organise our tasks during the development 
 **Building tool**: Visual Studio 2019 (ASP.NET CORE WEB API), Visual Studio Code (Angular CLI)
 
 
-[Demo](https://drive.google.com/drive/folders/1GetIlPF_ScCIE3PSWWAx9btU86vIYyqS) <br />
+[This is the video demo for our app](https://drive.google.com/drive/folders/1GetIlPF_ScCIE3PSWWAx9btU86vIYyqS) <br />
 
  **User Stories:** <br />
 *1. Adding recipes*
