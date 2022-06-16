@@ -1,6 +1,6 @@
 # MDS_Project
  
-**Team**: Dinu Gabriel, Doncea Beatrice, Maxim Adriana, Minciuna Cezar, Neacsu Vlad
+**Team**: Dinu Gabriel, Doncea Beatrice, Maxim Adriana, Minciuna Cezar, Neacsu Vlad.
 
 **Theme**: Our project is a web application revolving around the idea of sharing and further improving recipes. The main features of the applications are: <br />
  -  having a user profile under which you can display your recipes
